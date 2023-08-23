@@ -7,6 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  --wp--style--global--content-size: 650px;
+* {
+  margin: 0;
 }
