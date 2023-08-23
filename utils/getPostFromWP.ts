@@ -8,6 +8,6 @@ export async function getPostFromWP() {
         return posts
     } catch (err) {
         console.error("Failed to fetch posts:", err)
-        return []
+        return null
     }
 }

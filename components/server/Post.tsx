@@ -7,8 +7,6 @@ type PostProps = {
 }
 
 export default function Post({ post }: PostProps) {
-    if (post == null) return null
-
     return (
         <div className="sm:w-1/2 w-3/4 p-10 flex flex-col gap-4" key={post.id}>
             <div>

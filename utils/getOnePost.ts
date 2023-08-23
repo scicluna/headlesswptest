@@ -8,6 +8,6 @@ export async function getOnePost(slug: string) {
         return post
     } catch (err) {
         console.error("Failed to fetch posts:", err)
-        return []
+        return null
     }
 }
