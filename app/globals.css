@@ -1,0 +1,12 @@
+@import url("/styles/twentytwo.css");
+@import url("/styles/wpstyles.css");
+@import url("/styles/wpimage.css");
+@import url("/styles/wpnavi.css");
+@import url("/styles/unlimitedinline.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  --wp--style--global--content-size: 650px;
+}
