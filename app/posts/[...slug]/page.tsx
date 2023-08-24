@@ -8,12 +8,12 @@ type OnePostProps = {
 }
 
 export default async function OnePost({ params }: OnePostProps) {
-  const post = await getOnePost(params.slug)
+  const [post, comments] = await getOnePost(params.slug)
   if (post == null) return null //redirect to error page
 
   return (
     <main className="w-full flex flex-col items-center">
-      <FullPost post={post[0]} />
+      <FullPost post={post} comments={comments} />
     </main>
   )
 }
